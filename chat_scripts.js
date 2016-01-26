@@ -9,8 +9,9 @@ window.onload = function (event) {
         var msg = document.getElementById('chat_message');
         console.log(msg.value);
         //msg.value or an object can be sent to server
+        var nick = document.getElementById('nick');
         var dataToServer = {
-            name:'undefined',
+            name: nick.value,
             message: msg.value
         }
         //Send object to server
